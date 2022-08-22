@@ -1,0 +1,25 @@
+.roundBgImage{
+  height: 55rem;
+  height: 55rem;
+  border-radius: 50%;
+  overflow: clip;
+  position: absolute;
+  background: white;
+  background-size: cover;
+  background-position: top;
+  z-index: -1;
+}@media only screen and (max-width: 37.5em) {
+      .roundBgImage {
+        height: 51.3rem;
+        width: 51.3rem;
+      } }
+
+.roundBlob{
+  border-radius: 50%;
+  position: absolute;
+  height: 55rem;
+  width: 55rem;
+}@media only screen and (max-width: 37.5em) {
+      .roundBlob {
+        height: 51.3rem;
+        width: 51.3rem; } }

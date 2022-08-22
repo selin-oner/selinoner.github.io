@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>home | selin oner</title>
+    <meta name="description" content="selin oner's personal website" />
+
+    <link rel="icon" href="./assets/png/so-icon.png">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/blobbg.css">
+    <link rel="stylesheet" href="css/roundBlob.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />   
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/SOblob.png"
+              alt="selinonerheaderlogo"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">selin oner</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link"> about </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link"> projects </a>
+            </li>
+            <!--<li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> contact </a>
+            </li> -->
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> about </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> projects </a>
+            </li>
+
+            <!--<li class="header__sm-menu-link">
+              <a href="./index.html#contact"> contact </a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="home-hero">
+      <!--<div class="home-hero__mouse-scroll-cont">
+          <div class="mouse"></div>
+      </div> -->
+      <div class="bgImage"></div>
+        <svg class="blobCont">
+          <image href="./assets/png/colors.png" mask="url(#mask)" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+          <defs>
+            <filter id="gooey" height="130%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            </filter>
+          </defs>
+          <mask id="mask" x="0" y="0">
+            <g style="filter: url(#gooey)">
+              <circle class="blob" cx="10%" cy="10%" r="80" fill="white" stroke="white"/>
+              <circle class="blob" cx="50%" cy="10%" r="40" fill="white" stroke="white"/>
+              <circle class="blob" cx="17%" cy="15%" r="70" fill="white" stroke="white"/>
+              <circle class="blob" cx="90%" cy="20%" r="120" fill="white" stroke="white"/>
+              <circle class="blob" cx="30%" cy="25%" r="30" fill="white" stroke="white"/>
+              <circle class="blob" cx="50%" cy="60%" r="80" fill="white" stroke="white"/>
+              <circle class="blob" cx="70%" cy="90%" r="10" fill="white" stroke="white"/>
+              <circle class="blob" cx="90%" cy="60%" r="90" fill="white" stroke="white"/>
+              <circle class="blob" cx="30%" cy="90%" r="80" fill="white" stroke="white"/>
+              <circle class="blob" cx="10%" cy="10%" r="80" fill="white" stroke="white"/>
+              <circle class="blob" cx="50%" cy="10%" r="20" fill="white" stroke="white"/>
+              <circle class="blob" cx="17%" cy="15%" r="70" fill="white" stroke="white"/>
+              <circle class="blob" cx="40%" cy="20%" r="120" fill="white" stroke="white"/>
+              <circle class="blob" cx="30%" cy="25%" r="30" fill="white" stroke="white"/>
+              <circle class="blob" cx="80%" cy="60%" r="80" fill="white" stroke="white"/>
+              <circle class="blob" cx="17%" cy="10%" r="100" fill="white" stroke="white"/>
+              <circle class="blob" cx="40%" cy="60%" r="90" fill="white" stroke="white"/>
+              <circle class="blob" cx="10%" cy="50%" r="80" fill="white" stroke="white"/>
+            </g>
+          </mask>
+        </svg>
+
+      
+      <div class="home-hero__logo">
+         <!--<img
+          src="./assets/png/selinonerlogo.png"
+          alt="selinonerlogo"
+          class="home-hero__logo-icon"
+        /> -->
+      </div>
+      <div class="home-hero__content">
+
+        <h1 class="heading-primary">
+          design is a journey, 
+        welcome to mine</h1>
+        <div class="home-hero__info">
+          <p class="headlineINTRO">
+            hi! i'm selin -- a UI/UX designer and occasional front-end developer who loves to bring projects to life
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./assets/jpeg/Selin_Oner_ResumeCopy.pdf" target=”_blank” class="btn btn--bg">my resume</a>
+          <div class="home-hero__socials">
+            <div class="home-hero__social">
+              <a href="https://www.linkedin.com/in/selin-oner/" target=”_blank” class="home-hero__social-icon-link">
+                <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">about</span>
+          <span class="heading-sec__sub">
+            based in Los Angeles | cognitive science • user experience • business
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-skills">
+            <!--<h3 class="about__content-title">hey! nice to meet you :)</h3>
+            
+             <div class="skills">
+              <div class="skills__skill">Figma</div>
+              <div class="skills__skill">Adobe XD</div>
+              <div class="skills__skill">Adobe Illustrator</div>
+              <div class="skills__skill">Adobe Photoshop</div>
+              <div class="skills__skill">Adobe After Effects</div>
+              <div class="skills__skill">Swift</div>
+              <div class="skills__skill">C++</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+            </div> -->
+            <div class="about_content-logo">
+              <div class="roundBgImage"> </div>
+                <svg class="roundBlob">
+                  <image href="./assets/png/colors.png" mask="url(#mask)" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                  <defs>
+                    <filter id="gooey" height="130%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                    </filter>
+                  </defs>
+                  <mask id="mask" x="0" y="0">
+                    <g style="filter: url(#gooey)">
+                      <circle class="blob" cx="10%" cy="10%" r="80" fill="white" stroke="white"/>
+                      <circle class="blob" cx="50%" cy="10%" r="40" fill="white" stroke="white"/>
+                      <circle class="blob" cx="17%" cy="15%" r="70" fill="white" stroke="white"/>
+                      <circle class="blob" cx="90%" cy="20%" r="120" fill="white" stroke="white"/>
+                      <circle class="blob" cx="30%" cy="25%" r="30" fill="white" stroke="white"/>
+                      <circle class="blob" cx="50%" cy="60%" r="80" fill="white" stroke="white"/>
+                      <circle class="blob" cx="70%" cy="90%" r="10" fill="white" stroke="white"/>
+                      <circle class="blob" cx="90%" cy="60%" r="90" fill="white" stroke="white"/>
+                      <circle class="blob" cx="30%" cy="90%" r="80" fill="white" stroke="white"/>
+                      <circle class="blob" cx="10%" cy="10%" r="80" fill="white" stroke="white"/>
+                      <circle class="blob" cx="50%" cy="10%" r="20" fill="white" stroke="white"/>
+                      <circle class="blob" cx="17%" cy="15%" r="70" fill="white" stroke="white"/>
+                      <circle class="blob" cx="40%" cy="20%" r="120" fill="white" stroke="white"/>
+                      <circle class="blob" cx="30%" cy="25%" r="30" fill="white" stroke="white"/>
+                      <circle class="blob" cx="80%" cy="60%" r="80" fill="white" stroke="white"/>
+                      <circle class="blob" cx="17%" cy="10%" r="100" fill="white" stroke="white"/>
+                      <circle class="blob" cx="40%" cy="60%" r="90" fill="white" stroke="white"/>
+                      <circle class="blob" cx="10%" cy="50%" r="80" fill="white" stroke="white"/>
+                    </g>
+                  </mask>
+                </svg>
+              <img
+                src="./assets/png/selinonerlogo.png"
+                alt="selinonerlogo"
+                class="about__content-logo-blob"
+              />
+            </div>
+          </div>
+          <div class="about__content-main">
+            <h3 class="about__content-title">hey! nice to meet you :)</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                I'm an undergraduate student at USC studying <strong>Cognitive Science</strong> and minoring in <strong>Business</strong> and <strong>User Experience</strong>. <!-- I'm passionate about <strong> design, graphics, and project management</strong>. --> By finding the intersection of design, technology, and innovation, I aim to create <strong>dynamic interactive experiences</strong> that generate answers to specific challenges.  
+                
+                <!-- and I'm a <strong> Frontend Web Developer </strong> located in
+                Los Angeles. I've done
+                <strong> remote </strong>
+                projects for agencies, consulted for startups, and collaborated
+                with talented people to create
+                <strong>digital products </strong>
+                for both business and consumer use. -->
+              </p>
+              <p class="about__content-details-para">
+                I draw my inspiration from diverse components of everyday life, or anything that gives me the opportunity to share who I am.
+              </p>
+              <p class="about__content-details-para">
+                My design journey has evolved as I continuously learn versatile skills, adapt to different environments, and am introduced to new fields that peak my interest. I'm currently involved in <strong>UI/UX design</strong>, but am enthusiastic about getting into <strong>Project Management</strong> as well!
+                <!--I'm currently involved in UX/UI design, but I'm interested in Project Management as well. I want to be able to bridge the gap between developers and designers for smooth communication. -->
+              </p>
+              <p class="about__content-details-para">
+                Feel free to <strong>reach out</strong> for a quick chat!
+              </p>
+            </div>
+            <a href="mailto: selinone@usc.edu" class="btn btn--med btn--theme dynamicBgClr"
+              >contact</a
+            >
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            check out some of the projects i've worked on below!
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/cravinmockup.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Cravin</h3>
+              <p class="projects__row-content-desc">
+                Cravin is a mobile food app that helps users find, order, and pick up food en route quicker.
+              </p>
+              <a
+                href="./cravin.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >learn more</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/visionmockup.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Vision Venture</h3>
+              <p class="projects__row-content-desc">
+                Vision Venture is a subproject of USC Viterbi where current students interview recent alumni about their educational and professional experiences to help students see beyond the immediate horizon of course work.
+              </p>
+              <a
+                href="./vision-venture.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >learn more</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/fotmmmockup.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Friends of The Miracle Mile</h3>
+              <p class="projects__row-content-desc">
+                Friends of the Miracle Mile is a nonprofit organization devoted to connecting their resources to community causes, and has an upcoming expungement program.
+              </p>
+              <a
+                href="./friends-of-the-miracle-mile.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >learn more</a
+              >
+            </div>
+          </div>
+          
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/vibemockup.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Vibe Check</h3>
+              <p class="projects__row-content-desc">
+                Vibe Check is an online platform that analyzes users’ Instagram posts, visualizes their overall vibe, and gives suggestions on how to increase engagement with their profile.
+              </p>
+              <a
+                href="./vibe-check.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >learn more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            feel free to reach out for a chat! :)
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">name</label>
+              <input
+                required
+                placeholder="enter your name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">email</label>
+              <input
+                required
+                placeholder="enter your email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="enter your message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              send!
+            </button>
+          </form>
+        </div>
+      </div>
+    </section> -->
+    
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>links</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/selin-oner/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">selin oner</h4>
+            <p class="main-footer__short-desc">
+              designer. developer. innovator.
+            </p>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright 2022. Made by
+          <a rel="noreferrer" href="./index.html"
+            >Selin Oner</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
